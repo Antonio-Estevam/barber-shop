@@ -1,17 +1,17 @@
 import Image from "next/image"
+import HamburgerMenu from "./HamburgerMenu"
 export default function Header(){
     return(
-        <div className=" relative w-full flex justify-between p-20">
+        <div className=" relative w-full flex justify-between items-center px-20 pt-20 mb-16">
             <div className="">
                     <Image
                     src="/logo.png"
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     alt="Logo barber shop"/>
             </div>
             <nav className="">
-                <ul>home</ul>
-                <ul>sobre</ul>
+                <HamburgerMenu/>
             </nav>
         </div>
     )
