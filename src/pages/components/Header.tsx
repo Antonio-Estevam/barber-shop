@@ -2,7 +2,7 @@ import Image from "next/image"
 import HamburgerMenu from "./HamburgerMenu"
 export default function Header(){
     return(
-        <div className=" relative w-full flex justify-between items-center px-20 pt-20 mb-16">
+        <div className=" relative z-60 w-full flex justify-between items-center px-20 pt-20 mb-16">
             <div className="">
                     <Image
                     src="/logo.png"

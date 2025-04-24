@@ -1,24 +1,33 @@
 import Header from "./components/Header";
 import { FacebookIcon, Instagram, Mail, Phone, Timer, Twitter, WheatIcon } from "lucide-react";
+import MaskBackground from "./components/MaskBackground";
 
 export default function Main() {
   return (
     <div>
-    <video autoPlay muted loop preload="true" className="absolute top-0 w-full h-full object-cover">
+    <video 
+      autoPlay 
+      muted
+      playsInline 
+      loop 
+      preload="auto" 
+      className="absolute -z-10 top-0 w-full h-full object-cover object-center brightness-50"
+    >
       <source src="/barbeariaVideo.mp4" type="video/mp4" />   
       <div className="vsc-controller hidden"/> 
     </video>
+    <MaskBackground/>    
     <Header/>
-    <div className="relative w-full flex flex-col justify-center text-[#ffffff]/80 px-20" >
+    <div className=" x-20 relative w-full flex flex-col justify-center text-[#ffffff]/80 px-4 md:px-20 max-w-screen-xl mx-auto" >
       <h1 className="text-5xl pb-4">
         Nós Criaremos <br/>
         Sua Melhor Imagem
       </h1>
 
       <div className="flex my-2 pb-2">
-        <div className="w-[30px] h-[5px] bg-white"></div>
-        <div className="opacity-50 w-[30px] h-[5px] bg-white mx-1.5 my-0"></div>
-        <div className="opacity-50 w-[30px] h-[5px] bg-white"></div>
+        <div className="w-[30px] h-[5px] bg-[#dd8546]"></div>
+        <div className="opacity-30 w-[30px] h-[5px] bg-[#dd8546] mx-1.5 my-0"></div>
+        <div className="opacity-30 w-[30px] h-[5px] bg-[#dd8546]"></div>
       </div>     
 
       <article>
@@ -29,14 +38,14 @@ export default function Main() {
       </article>
 
       <div>
-        <button type="button" className="bg-[#AC9374] p-3 my-5 font-semibold text-md rounded-md cursor-pointer transition-all hover:brightness-50">
+        <button type="button" className="bg-[#dd8546] p-3 my-5 font-semibold text-md rounded-md cursor-pointer transition-all hover:brightness-50">
         Agendar Horário
         </button>
       </div>
 
     </div>
-      <section className="relative flex w-full mt-44 items-end">
-        <div className="flex bg-[#1B181E] pl-20 pr-10 py-10 w-2/3">
+      <section className="relative z-20 flex w-full mt-44 place-items-end">
+        <div className="flex flex-col md:flex-row bg-[#1B181E] px-6 md:px-20 py-10 w-full gap-6">
 
           <div className="flex gap-6 w-1/3">
           <Phone 
@@ -82,7 +91,7 @@ export default function Main() {
           </div>
 
         </div>
-        <div className="flex bg-[#AC9374] pl-20 pr-10 py-6 w-1/3 h-max">
+        <div className="grid grid-cols-2 sm:grid-cols-4 bg-[#dd8546] px-6 py-6 w-full gap-4 text-white">
           <div className="w-1/4 flex row gap-2 items-center">
           <Instagram
           size={30}

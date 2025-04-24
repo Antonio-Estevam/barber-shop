@@ -12,7 +12,7 @@ export default function HamburgerMenu() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
-        {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" color="#fff"/>}
+        {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" color="#dd8546"/>}
       </button>
 
       <AnimatePresence>
@@ -28,12 +28,12 @@ export default function HamburgerMenu() {
               className="absolute top-6 right-6 text-gray-800"
               aria-label="Fechar menu"
             >
-              <X className="w-8 h-8 mt-20 mr-16 pr-[6px]"  color="#fff" />
+              <X className="w-8 h-8 mt-20 mr-16 pr-[6px]"  color="#dd8546" />
             </button>
-            <a href="#home" onClick={() => setIsOpen(false)} className="hover:text-blue-500 transition-colors">Início</a>
-            <a href="#sobre" onClick={() => setIsOpen(false)} className="hover:text-blue-500 transition-colors">Sobre</a>
-            <a href="#servicos" onClick={() => setIsOpen(false)} className="hover:text-blue-500 transition-colors">Serviços</a>
-            <a href="#contato" onClick={() => setIsOpen(false)} className="hover:text-blue-500 transition-colors">Contato</a>
+            <a href="#home" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Início</a>
+            <a href="#sobre" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Sobre</a>
+            <a href="#servicos" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Serviços</a>
+            <a href="#contato" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Contato</a>
           </motion.div>
         )}
       </AnimatePresence>
