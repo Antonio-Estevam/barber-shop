@@ -12,7 +12,7 @@ export default function HamburgerMenu() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
-        {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" color="#dd8546"/>}
+        {isOpen ? <X className="w-12 h-12" /> : <Menu className="w-12 h-12" color="#dd8546"/>}
       </button>
 
       <AnimatePresence>
@@ -28,7 +28,7 @@ export default function HamburgerMenu() {
               className="absolute top-6 right-6 text-gray-800"
               aria-label="Fechar menu"
             >
-              <X className="w-8 h-8 mt-20 mr-16 pr-[6px]"  color="#dd8546" />
+              <X className="w-12 h-12 mt-20 mr-16 pr-[6px]"  color="#dd8546" />
             </button>
             <a href="#home" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Início</a>
             <a href="#sobre" onClick={() => setIsOpen(false)} className="hover:text-[#dd8546] transition-colors">Sobre</a>
