@@ -4,6 +4,7 @@ import MaskBackground from "./components/MaskBackground";
 import VideoBackground from "./components/BackgroundVideo";
 import LoadingCircleSpinner from "./components/LoadingCircleSpinner";
 import { Suspense } from "react";
+import Sobre from "./components/Sobre";
 
 export default function Main() {
   return(
@@ -113,6 +114,7 @@ export default function Main() {
               </div>
             </div>
           </section>
+          <Sobre/>
       </Suspense>
     </div>
   )
